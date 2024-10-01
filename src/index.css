@@ -1,0 +1,352 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.home{
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+.left-menu-container{
+  width: 20%;
+  border-right: 1px solid #cccccc8d;
+  height: 585px;
+  overflow-y: hidden;
+  position: fixed;
+}
+.left-menu-container .top-container{
+  display: flex;
+  padding: 30px 20px 30px 40px;
+}
+.left-menu-container .top-container img{
+  margin: 5px 0px 0px 0px;
+}
+.left-menu-container .top-container h4{
+  font-family: "Euphoria Script", cursive;
+  font-size: 30px;
+  font-weight: 800;
+  margin: 0px 0px 0px 15px;
+}
+
+.left-menu-container .bottom-container{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.left-menu-container .bottom-container .item{
+  display: flex;
+  margin: 15px 0px 0px 0px;
+  height: 25px;
+  padding: 6px 0px 0px 0px;
+  width: 90%;
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+.left-menu-container .bottom-container .item:hover{
+  background: #cccccc57;
+}
+
+.left-menu-container .bottom-container .item small{
+  margin: 6px 0px 0px 10px;
+  font-family: 'loto',sans-serif;
+  font-weight: 500;
+}
+/* end of left */
+
+
+/* center container */
+.center-container{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 250px;
+}
+.center-container .status-container{
+  padding: 10px 20px 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.center-container .status-container .status{
+  cursor: pointer;   
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 0px 0px;
+}
+.center-container .status-container .status small{
+  font-family: 'loto',sans-serif;
+  margin: 5px 0px 0px 0px;
+}
+
+
+.center-container .post-container{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 10px 40px 40px 40px;
+}
+
+.center-container .post-container .post-content{
+  width: 80%;
+  padding: 10px 10px 10px 10px;
+  border-bottom: 1px solid #cccccc60;
+} 
+.center-container .post-container .post-content .post-top{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.center-container .post-container .post-content .post-top .post-user{
+  display: flex;
+  font-family: 'loto',sans-serif;
+}
+.center-container .post-container .post-content .post-top .post-user small{
+  font-size: 14px;
+  font-weight: 500;
+  margin: 15px 0px 0px 10px;
+}
+.center-container .post-container .post-content .post-top .post-user p{
+  font-size: 15px;
+  margin: 15px 0px 0px 5px;
+}
+
+.center-container .post-container .post-content .post-image{
+  width: 100%;
+}
+.center-container .post-container .post-content .post-image img{
+  width: 100%;
+}
+.center-container .post-container .post-content .post-option{
+  display: flex;
+  margin: 20px 0px 0px 0px;
+  justify-content: space-between;
+}
+.center-container .post-container .post-content .post-option .left-option{
+  display: flex;
+  justify-content: space-between;
+}
+#like,#comment,#send{
+  margin: 0px 20px 0px 0px;
+}
+.center-container .post-container .post-content .post-liked{
+  margin: 20px 0px 0px 0px;
+  display: flex;
+}
+.center-container .post-container .post-content .post-liked small{
+  font-family: sans-serif;
+  margin: 9px 0px 0px 10px;
+}
+.center-container .post-container .post-content .post-add-comment{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px 0px 0px;
+}
+.center-container .post-container .post-content .post-add-comment input{
+  background: transparent;
+  font-family: 'loto',sans-serif;
+  outline: none;
+  border: none;
+  color: #605f5fac;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+
+/* end of center */
+
+/* right container */
+.right-menu-container{
+  width: 20%;
+  padding: 10px;
+  position: fixed;
+  float: right;
+  margin: 0px 0px 0px 1000px;
+}
+.right-menu-container .user{
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'loto',sans-serif;
+}
+
+.right-menu-container .user .user-profile{
+  display: flex;
+}
+.right-menu-container .user .user-profile small{
+  margin: 5px 0px 0px 8px;
+  font-size: 15px;
+}
+.right-menu-container .user  .switch p{
+  font-size: 12px;
+  color: rgb(0, 0, 200);
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+}
+.right-menu-container .user-bottom{
+  padding: 20px;
+}
+.right-menu-container .user-bottom .top-suggest{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  font-family: sans-serif;
+}
+.right-menu-container .user-bottom .suggest-container{
+  margin: 10px 0px 0px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-menu-container .user-bottom .suggest-container .suggest{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+.right-menu-container .user-bottom .suggest-container .suggest p{
+  font-size: 12px;
+  font-family: sans-serif;
+  color: rgb(0, 0, 200);
+  cursor: pointer;
+  margin: 15px 0px 0px 0px;
+}
+.right-menu-container .user-bottom .suggest-container .suggest p:hover{
+  color: #ccc;
+}
+.right-menu-container .user-bottom .suggest-container .suggest .suggest-profile{
+  display: flex;
+}
+.right-menu-container .user-bottom .suggest-container .suggest .suggest-profile small{
+  font-size: 14px;
+  font-family: 'loto',sans-serif;
+  margin: 8px 0px 0px 10px;
+}
+.right-menu-container .user-bottom .copy{
+  color: #605f5fac;
+  font-family: 'loto',sans-serif;
+  margin: 60px 0px 0px 0px;
+}
+
+
+/* create post */
+.create-post{
+  width: 90%;
+  padding: 20px;
+  margin: 0px 0px 0px 400px;
+}
+.create-post .post-form{
+  width: 60%;
+  margin: 50px 0px 0px 0px;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'loto',sans-serif;
+  height: 400px;
+  box-shadow: 2px 1px 2px 1px #ccc;
+}
+.create-post .post-form small{
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+.create-post .post-form input{
+  margin: 10px 0px 0px 0px;
+  cursor: pointer;
+}
+.create-post .post-form button{
+  cursor: pointer;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  outline: none;
+  border-radius: 5px;
+  margin: 50px auto;
+  border: 0.1px solid #cccccc50;
+  background: #414141ba;
+}
+.loading{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  border-top: 9px solid #fff;
+  border-left: 9px solid #E0479E;
+  border-right: 9px solid #E0479E;
+  border-bottom: 9px solid #E0479E;
+  display: flex;
+  margin: 20px auto;
+  animation: anm 2s linear infinite;
+}
+@keyframes anm{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+
+/* vidoes */
+.video-container{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 0px 0px 0px 250px;
+}
+
+.video-container button{
+  margin: 20px auto;
+  display: flex;
+  height: 40px;
+  border-radius: 5px;
+  background: #E0479E;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-family: 'loto',sans-serif;
+  width: 50%;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px 0px 0px 0px;
+}
+
+.video-container .video-form{
+    width: 100%;
+    height: 400px;
+    margin: 80px 0px 0px 0px;
+    position: absolute;
+    background: #e7e7e7ba;
+    z-index: 2;
+    padding: 40px;
+}
+.video-container .video-form button{
+  margin: 150px auto;
+  display: flex;
+  height: 50px;
+  border-radius: 5px;
+  background: #fff;
+  outline: none;
+  border: none;
+  color: #000;
+  font-family: 'loto',sans-serif;
+  width: 50%;
+  justify-content: center;
+  cursor: pointer;
+  padding: 12px 0px 0px 0px; 
+}
+.video-container .posted-videos{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 10px;
+}
+.video-container .posted-videos .videos{
+  height: 150px;
+  margin: 30px 10px 10px 10px ;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 1px solid #ccc ;
+}
